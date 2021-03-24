@@ -125,7 +125,7 @@ npm install --save core-js-pure@3.10.2
 npm install --save core-js-bundle@3.10.2
 ```
 
-Already bundled version of `core-js` [on CDN](https://unpkg.com/core-js-bundle@3.10.2) ([minified version](https://unpkg.com/core-js-bundle@3.10.2/minified.js)).
+Already bundled versions of `core-js` on CDN: [actual](https://unpkg.com/core-js-bundle@3.10.2/actual.js), [full](https://unpkg.com/core-js-bundle@3.10.2/full.js).
 
 ### `postinstall` message[⬆](#index)
 The `core-js` project needs your help, so the package shows a message about it after installation. If it causes problems for you, you can disable it:
@@ -1947,8 +1947,7 @@ core-js/features/typed-array/find-last-index
 [1, 2, 3, 4].findLastIndex(it => it % 2); // => 2
 ````
 ##### [Accessible `Object#hasOwnProperty`](https://github.com/tc39/proposal-accessible-object-hasownproperty)[⬆](#index)
-Module [`esnext.object.has-own`](https://github.com/zloirock/core-js/blob/v3.10.2/packages/core-js/modules/esnext.object.has-own.js).
-```js
+Module [`esnext.object.has-own`](https://github.com/zloirock/core-js/blob/v3.10.2/packages/core-js/modules/esnext.object.has-own.js).```js
 class Object {
   hasOwn(object: object, key: PropertyKey): boolean;
 }
